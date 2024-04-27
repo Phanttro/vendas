@@ -1,49 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Botões Responsivos</title>
+<title>Loja Virtual</title>
 <style>
-    /* Estilos básicos para garantir responsividade e centralização */
-    body, html {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Arial, sans-serif;
-    }
-
-    .container {
-        text-align: center;
-        width: 80%; /* Largura do container para garantir um pouco de espaço nas laterais */
-        max-width: 300px; /* Máximo de largura para os botões */
-    }
-
-    .button {
-        background-color: #007BFF; /* Cor de fundo azul */
-        color: white; /* Texto branco */
-        border: none;
-        padding: 15px 20px; /* Padding para fazer o botão maior */
-        margin: 10px 0; /* Margem para separar os botões verticalmente */
-        width: 100%; /* Faz o botão expandir para a largura total do container */
-        cursor: pointer;
-        border-radius: 5px; /* Bordas arredondadas */
-        font-size: 16px; /* Tamanho do texto */
-        transition: background-color 0.3s;
-    }
-
-    .button:hover {
-        background-color: #0056b3; /* Muda a cor de fundo quando o mouse está sobre o botão */
-    }
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+  }
+  .header {
+    background-color: #fa8072;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  .product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  .product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .product-title {
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
 </style>
 </head>
 <body>
-<div class="container">
-    <button class="button">Churrasqueira Elétrica</button>
-    <button class="button">Bike Aro 29</button>
+<div class="header">
+  <!-- Seu cabeçalho -->
+  <h1>PRODUTOS SHOPEE</h1>
+  <p>↓ BASTA CLICAR EM CIMA DA FOTO DO PRODUTO DESEJADO! ↓</p>
 </div>
+
+<div class="products-grid">
+  <!-- Produto 1 ok-->
+  <div class="product-item">
+    <a href="https://shope.ee/30Rc0EjJPm" target="_blank">
+      <img src="https://down-br.img.susercontent.com/file/e149aa5678266ad9c865023ff4a68192" alt="Produto 1">
+    </a>
+    <p class="product-title">Balança Digital de Cozinha Confeitaria SF-400 Até 10 kg Escala 1 grama</p>
+  </div>
+  <!-- Produto 2 ok-->
+  <div class="product-item">
+    <a href="https://shope.ee/9zbMLMPOr8" target="_blank">
+      <img src="https://down-tx-br.img.susercontent.com/sg-11134201-7qven-lgpjt27p3eu2f5.webp" alt="Produto 2">
+    </a>
+    <p class="product-title">Fritadeira Eletrica Air Fryer Forno e Desidratador Oven Tronos 12 Litros 3 em 1 com Timer 127v</p>
+  </div>
+  <!-- Produto 3 ok -->
+  <div class="product-item">
+    <a href="https://shope.ee/6Ki3zFS0K6" target="_blank">
+      <img src="https://down-cvs-br.img.susercontent.com/br-11134207-7r98o-lrj0h57h0e19a0.webp" alt="Produto 3">
+    </a>
+    <p class="product-title">Kit Teclado e Mouse Sem Fio Usb Wireless 2.4ghz Multimídia Abnt2 Pc Notebook Mac/Usb Ótimo Para Home Office Computador Pc Notebook</p>
+  </div>
+  <!-- Produto 4 -->
+  <div class="product-item">
+    <a href="https://shope.ee/605DaYe5mj" target="_blank">
+      <img src="https://down-cvs-br.img.susercontent.com/br-11134207-7r98o-lsmvw5poc2lga0.webp" alt="Produto 4">
+    </a>
+    <p class="product-title">Mouse Pad Gamer Iluminado led Rgb Grande 80 cm por 30 com Mousepad gamer Led com em volta superficie speed para jogos</p>
+  </div>
+</div>
+
 </body>
 </html>
